@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <fragment
+            android:id="@+id/fragment1"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_1"
+            android:name="com.example.four_fragment.Fragment1" />
+        <fragment
+            android:id="@+id/fragment2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_2"
+            android:name="com.example.four_fragment.Fragment2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <fragment
+            android:id="@+id/fragment3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_3"
+            android:name="com.example.four_fragment.Fragment3" />
+        <fragment
+            android:id="@+id/fragment4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_4"
+            android:name="com.example.four_fragment.Fragment4" />
+    </LinearLayout>
+
+</LinearLayout>
